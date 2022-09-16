@@ -1,0 +1,95 @@
+body {
+  line-height: 1.5;
+  font-family: 'Microsoft JhengHei', 'SimHei', 'STHeiti';
+  font-size: .8rem;
+  cursor: default;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  margin-right: 2px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #dee2e6;
+  outline: 0 solid #687685;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:horizontal {
+  box-shadow: none;
+}
+
+/* custom contextMenu item icon */
+.context-menu-insert-icon {
+  background-image: url(./img/menu/insert.svg);
+}
+
+.context-menu-delete-icon {
+  background-image: url(./img/menu/delete.svg);
+}
+
+.context-menu-copy-icon {
+  background-image: url(./img/menu/copy.svg);
+}
+
+.context-menu-paste-icon {
+  background-image: url(./img/menu/paste.svg);
+}
+
+/* disabled style */
+.context-menu-disabled .context-menu-insert-icon {
+  background-image: url(./img/menu/disabled/insert-disabled.svg);
+}
+
+.context-menu-disabled .context-menu-delete-icon {
+  background-image: url(./img/menu/disabled/delete-disabled.svg);
+}
+
+.context-menu-disabled .context-menu-copy-icon {
+  background-image: url(./img/menu/disabled/copy-disabled.svg);
+}
+
+.context-menu-disabled .context-menu-paste-icon {
+  background-image: url(./img/menu/disabled/paste-disabled.svg);
+}
+
+.tooltip { pointer-events: none; }
+
+/* menu tool icon button style */
+.miconmenu-filter-img {
+  background-image: url(./img/tool/search.svg);
+}
+
+.miconmenu-config-img {
+  background-image: url(./img/tool/config.svg);
+}
+
+.miconmenu-insert-img {
+  background-image: url(./img/tool/insert.svg);
+}
+
+.miconmenu-sort-img,
+.miconmenu-sort-img.sort-default {
+  background-image: url(./img/tool/sort-default.svg);
+}
+.miconmenu-sort-img.sort-asc {
+  background-image: url(./img/tool/sort-asc.svg);
+}
+.miconmenu-sort-img.sort-desc {
+  background-image: url(./img/tool/sort-desc.svg);
+}
+
+.miconmenu-reload-img {
+  background-image: url(./img/tool/refresh.svg);
+}
